@@ -14,10 +14,12 @@ categories.workspace = true
 
 [dependencies.ethbridge-bridge-events]
 features = ["ethers-derive"]
+version = "0.24"
 path = "../ethbridge-bridge-events"
 
 [dependencies.ethbridge-structs]
 features = []
+version = "0.24"
 path = "../ethbridge-structs"
 
 [dependencies.ethers]

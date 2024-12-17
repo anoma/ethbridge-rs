@@ -23,6 +23,7 @@ version = "18.0.0"
 
 [dependencies.ethbridge-structs]
 features = []
+version = "0.24"
 path = "../ethbridge-structs"
 
 [dependencies.ethers]
