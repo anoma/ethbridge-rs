@@ -1,7 +1,19 @@
 [workspace]
 resolver = "2"
+
 members = [
     "generate-ethbridge-crates",
     "test-ethbridge-events",
     "ethbridge-*"
 ]
+
+[workspace.package]
+authors = ["Heliax AG <hello@heliax.dev>"]
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/anoma/ethbridge-rs"
+version = "0.24.0"
+description = "Namada Ethereum bridge Rust compatible types"
+keywords = ["namada", "eth", "ethereum", "bridge", "types"]
+categories = ["cryptography::cryptocurrencies", "data-structures", "development-tools::ffi"]

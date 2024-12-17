@@ -1,3 +1,17 @@
+[package]
+name = "ethbridge-events"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+description.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[features]
+
 [dependencies.ethbridge-bridge-events]
 features = ["ethers-derive"]
 path = "../ethbridge-bridge-events"
@@ -5,10 +19,3 @@ path = "../ethbridge-bridge-events"
 [dependencies.ethers]
 optional = false
 version = "2.0.0"
-
-[features]
-
-[package]
-edition = "2021"
-name = "ethbridge-events"
-version = "0.24.0"
