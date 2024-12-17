@@ -1,5 +1,20 @@
+[package]
+name = "ethbridge-bridge-calls"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+description.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[features]
+
 [dependencies.ethbridge-structs]
 features = ["ethers-derive"]
+version = "0.24"
 path = "../ethbridge-structs"
 
 [dependencies.ethers]
@@ -9,10 +24,3 @@ version = "2.0.0"
 [dependencies.ethers-contract]
 optional = false
 version = "2.0.0"
-
-[features]
-
-[package]
-edition = "2021"
-name = "ethbridge-bridge-calls"
-version = "0.24.0"

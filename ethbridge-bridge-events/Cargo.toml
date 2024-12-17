@@ -1,9 +1,29 @@
+[package]
+name = "ethbridge-bridge-events"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+description.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[features]
+ethers-derive = [
+    "ethers",
+    "ethers-contract",
+    "ethbridge-structs/ethers-derive",
+]
+
 [dependencies.ethabi]
 optional = false
 version = "18.0.0"
 
 [dependencies.ethbridge-structs]
 features = []
+version = "0.24"
 path = "../ethbridge-structs"
 
 [dependencies.ethers]
@@ -13,15 +33,3 @@ version = "2.0.0"
 [dependencies.ethers-contract]
 optional = true
 version = "2.0.0"
-
-[features]
-ethers-derive = [
-    "ethers",
-    "ethers-contract",
-    "ethbridge-structs/ethers-derive",
-]
-
-[package]
-edition = "2021"
-name = "ethbridge-bridge-events"
-version = "0.24.0"
